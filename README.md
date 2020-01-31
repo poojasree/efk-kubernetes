@@ -7,15 +7,23 @@ This POC will give an overview on how you can quickly aggregate container logs f
 1.	An existing Kubernetes Cluster.
 2.	kubectl binary locally installed
 
-Getting a Kubernetes Cluster
+# Getting a Kubernetes Cluster
 Install Google Kubernetes Engine in GCP and connect through cloud shell interface
+
 Create a namespace logging
+
 $ kubectl create namespace logging
-Deploying an Elasticsearch Cluster with Helm
+
+# Deploying an Elasticsearch Cluster with Helm
 Add elasticsearch helm repository
+
 $ helm repo add elastic https://Helm.elastic.co
+
 Install the chart
+
 $ helm install elasticsearch elastic/elasticsearch -f ./values.yaml -n logging
+
 Check the pod status
+
 $ kubectl get pods -n logging
 
