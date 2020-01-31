@@ -6,6 +6,7 @@ This POC will give an overview on how you can quickly aggregate container logs f
 You need a few things.
 1.	An existing Kubernetes Cluster.
 2.	kubectl binary locally installed
+
 Getting a Kubernetes Cluster
 Install Google Kubernetes Engine in GCP and connect through cloud shell interface
 Create a namespace logging
